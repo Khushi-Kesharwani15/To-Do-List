@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #c3a9ff, #ffe6f2);
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px gray;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+
+    width: 500px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #4c2a85;
+
+}
+
+.list li {
+    padding: 20px;
+    border-top: dotted;
+    border-color: rgba(128, 128, 128, 0.495);
+    color: #ff6b6b;
+}
+
+.list li .fa-trash {
+    color: #ff6b6b;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.list li .fa-square-check {
+    color: #4caf50;
+    cursor: pointer;
+    right: 35px;
+    position: absolute;
+}
+
+.list li.checked {
+    color: #807c7c;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-square-check {
+    color: #807c7c;
+}
